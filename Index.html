@@ -4,52 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="IndexCSS.css">
+    <script src="https://kit.fontawesome.com/4c63e30e23.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <header class="head">
-        <nav class="navbar">
-            <div id="cal"><a href="Home.html">A3 CALCULATOR</a></div>
-            <ul>
-                <li><a href="About.html" target="_self">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
+<body onload="load();">
+    <div id="loader"></div>
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label id="logo">InfyCalculator</label>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+            <li><img src="logorb.png" id="logoimg"></li>
+            <li><p id="copyright">&copy; ANANT</p></li>
+        </ul>
+    </nav>
+    <section id="section">
+        <div class="container">
+            <input type="text" name="n1" id="num">
+            <div class="box" id="item1" onclick="allclear();">AC</div>
+            <div class="box" id="item2" onclick="clearO();">C</div>
+            <div class="box" id="item3" onclick="modulo();">%</div>
 
-    <div class="container">
-        <input type="text" name="n1" id="num">
-        <div class="box" id="item1" onclick="allclear();">AC</div>
-        <div class="box" id="item2" onclick="clearO();">C</div>
-        <div class="box" id="item3" onclick="modulo();">%</div>
+            <div class="box" id="item4" onclick="divide();">/</div>
+            <div class="box" id="item5" onclick="seven();">7</div>
 
-        <div class="box" id="item4" onclick="divide();">/</div>
-        <div class="box" id="item5" onclick="seven();">7</div>
+            <div class="box" id="item6" onclick="eight();">8</div>
+            <div class="box" id="item7" onclick="nine();">9</div>
 
-        <div class="box" id="item6" onclick="eight();">8</div>
-        <div class="box" id="item7" onclick="nine();">9</div>
+            <div class="box" id="item8" onclick="multiply();">*</div>
+            <div class="box" id="item9" onclick="four();">4</div>
 
-        <div class="box" id="item8" onclick="multiply();">*</div>
-        <div class="box" id="item9" onclick="four();">4</div>
+            <div class="box" id="item10" onclick="five();">5</div>
+            <div class="box" id="item11" onclick="six();">6</div>
 
-        <div class="box" id="item10" onclick="five();">5</div>
-        <div class="box" id="item11" onclick="six();">6</div>
+            <div class="box" id="item12" onclick="minus();">-</div>
+            <div class="box" id="item13" onclick="one();">1</div>
 
-        <div class="box" id="item12" onclick="minus();">-</div>
-        <div class="box" id="item13" onclick="one();">1</div>
+            <div class="box" id="item14" onclick="two();">2</div>
+            <div class="box" id="item15" onclick="three();">3</div>
 
-        <div class="box" id="item14" onclick="two();">2</div>
-        <div class="box" id="item15" onclick="three();">3</div>
+            <div class="box" id="item16" onclick="addition();">+</div>
+            <div class="box b1" id="item17" onclick="">$</div>
 
-        <div class="box" id="item16" onclick="addition();">+</div>
-        <div class="box b1" id="item17" onclick="">$</div>
+            <div class="box b1" id="item18" onclick="zero();">0</div>
+            <div class="box b1" id="item19" onclick="dot();">.</div>
 
-        <div class="box b1" id="item18" onclick="zero();">0</div>
-        <div class="box b1" id="item19" onclick="dot();">.</div>
-
-        <div class="box b1" id="item20" onclick="equal();">=</div>
-    </div>
+            <div class="box b1" id="item20" onclick="equal();">=</div>
+        </div>
+    </section>
 </body>
 <script src="IndexJS.js"></script>
 
