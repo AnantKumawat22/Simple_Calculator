@@ -3,135 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-image: url('login1.jpg');
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: center;
-            margin: 0px;
-            padding: 0px;
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/4c63e30e23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="AboutCSS.css">
+    <script>
+        function load() {
+            document.getElementById("loader").style.display = "none";
         }
-
-        .divimages {
-            height: 500px;
-            width: 800px;
-            position: relative;
-            top: 22px;
-            left: 359px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            justify-content: space-around;
-            align-items: center;
+        function check() {
+            if (document.getElementById("check").checked) {
+                document.getElementById("credit").style.display = "none";
+            }
+            else if (!(document.getElementById("check").checked)) {
+                document.getElementById("credit").style.display = "block";
+            }
         }
-
-        #imagesABJ, #imagesAK, #imagesAJ {
-            height: 300px;
-            width: 250px;
-        }
-
-        #AK {
-            height: 250px;
-            width: 250px;
-        }
-
-        li a {
-            text-decoration: none;
-            display: inline;
-            color: white;
-        }
-
-        ul li {
-            list-style: none;
-            align-items: center;
-
-        }
-
-        li a:hover {
-            background-color: rgba(131, 112, 112, 0.5);
-            padding: 10px;
-        }
-
-        .navbar {
-            position: relative;
-            background-color: rgb(52, 101, 235);
-            width: 99%;
-            top: 0px;
-            padding: 2px;
-            border-radius: 5px;
-            box-shadow: 1px 1px 5px black;
-            font-size: 19px;
-            border-radius: 10px;
-            display: flex;
-            font-family: sans-serif;
-        }
-
-        #cal {
-            padding-top: 15px;
-            margin: 1px 876px 3px 197px;
-            align-items: center;
-            font-size: 25px;
-        }
-
-        #cal a {
-            text-decoration: none;
-            display: inline;
-            color: white;
-        }
-
-        .head {
-            padding-left: 4px;
-        }
-
-        .copy {
-            position: relative;
-            top: 60px;
-            left: 678px;
-            display: inline;
-        }
-
-        .name {
-            font-size: 20px;
-            text-align: center;
-            background-color: black;
-            color: white;
-            margin-top: 3px;
-            border-radius: 3px;
-        }
-        .credit{
-            position: relative;
-            top:20px;
-            font-size: 30px;
-            text-align: center;
-            background-color: black;
-            color:white;
-            padding:20px;
-        }
-    </style>
+    </script>
 </head>
 
-<body>
-    <header class="head">
-        <nav class="navbar">
-            <div id="cal"><a href="Index.html">A3 CALCULATOR</a></div>
-            <ul>
-                <li><a href="About.html" target="_self">About Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="credit">CREATED BY</div>
-    <div class="divimages">   
-        <div id="imagesAK">
-            <div id="Anant">
-                <img src="anant1.jpg" id="AK" alt="">
-            </div>
-            <div class="name">ANANT KUMAWAT</div>
+<body onload="load();">
+    <div id="loader"></div>
+    <nav id="nav">
+        <input type="checkbox" id="check" onclick="check();">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">InfyGames</label>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="FeedBack.html">Feedback</a></li>
+            <li><img src="logorb.png" id="logorb" /></li>
+            <li>
+                <p id="copyright">&copy; ANANT</p>
+            </li>
+        </ul>
+    </nav>
+    <div id="credit">Anant Kumawat.</div>
+    <section id="section">
+
+        <div><img src="logo.png" id="anantlogo"></div>
+        <div>
+            <img src="anant1.jpg" id="anantimg">
         </div>
-    </div>
-    <div class="copy">&copy;Copyright by FOREVER</div>
+    </section>
 </body>
 
 </html>
