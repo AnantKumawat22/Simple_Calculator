@@ -73,7 +73,7 @@ a:active,a:hover{
     display:none;
 }
 
-@media (max-width:1066px){
+@media (max-width:1076px){
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -83,7 +83,7 @@ a:active,a:hover{
     }
 }
 
-@media (max-width:962px){
+@media (max-width:970px){
     .checkbtn{
         display:block;
     }
