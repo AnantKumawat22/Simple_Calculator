@@ -4,6 +4,10 @@ var con2;
 
 // operators :--
 
+function load(){
+    document.getElementById("loader").style.display="none";
+}
+
 function addition() {
     con1 = num.value;
     document.getElementById('num').value = '+';
